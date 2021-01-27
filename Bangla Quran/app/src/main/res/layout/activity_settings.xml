@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextColor="@color/color_white"
+            app:title="Settings"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:textColor="@color/daynightTextColor"
+        android:paddingLeft="10dp"
+        android:paddingTop="25dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:text="Night Mode"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Madina"
+            android:layout_marginTop="20dp"
+            android:checked="false"
+            android:onClick="onclickbuttonMethod"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quran Font"
+            android:layout_marginTop="10dp"
+            android:checked="true"
+            android:onClick="onclickbuttonMethod"
+            android:textSize="20dp" />
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salem"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:onClick="onclickbuttonMethod"
+            android:textSize="20dp" />
+    </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sample"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/aujubillajh"
+        android:textAlignment="center"
+        android:paddingTop="25dp"
+        android:fontFamily="@font/fonts"
+        android:textColor="@color/daynightTextColor"
+        android:gravity="center_horizontal" />
+
+</LinearLayout>

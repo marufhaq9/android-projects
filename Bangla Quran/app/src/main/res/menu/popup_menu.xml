@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:id="@+id/grp1"
+        android:enabled="true">
+    <item android:id="@+id/arabic_copy"
+        android:title="Copy Arabic" />
+    <item android:id="@+id/bangla_copy"
+        android:title="Copy Bangla" />
+    <item android:id="@+id/copy_full"
+        android:title="Copy Full" />
+    </group>
+    <item android:id="@+id/share_item"
+        android:title="Share" />
+    <item android:id="@+id/bookmark_item"
+        android:title="BookMark" />
+    <item android:id="@+id/report"
+        android:title="Report Error"/>
+</menu>

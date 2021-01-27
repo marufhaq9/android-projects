@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ABCDEF"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp">
+
+<ListView
+    android:id="@+id/list_view"
+    style="@style/scrollbar_shape_style"
+    android:divider="@drawable/line_divider"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollX="0px"
+    android:scrollY="0px"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbarSize="5dp"
+    android:smoothScrollbar="true"
+    android:touchscreenBlocksFocus="true"
+    android:scrollbarStyle="outsideOverlay"
+    android:scrollbars="vertical" />
+
+</LinearLayout>

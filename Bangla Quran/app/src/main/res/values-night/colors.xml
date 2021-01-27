@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="color_white">#fefefe</color>
+    <color name="pink_500">#FF0054</color>
+    <color name="switch_color">#4B0082</color>
+    <color name="switchColor">#FF00FF</color>
+    <color name="light_blue">#D1D5FA</color>
+    <color name="navy_blue">#5C6898</color>
+    <color name="cream">#A9DFE2</color>
+    <color name="light_pink">#FDB3CA</color>
+    <color name="matte_black">#003041</color>
+    <color name="niagra">#08979D</color>
+    <color name="downy">#6EC6CA</color>
+    <color name="daynightTextColor">#ffffff</color>
+    <color name="dNborder">#6EC6CA</color>
+    <color name="dayNightLine">#A9DFE2</color>
+    <color name="daynightToolbar">#fc5185</color>
+    <color name="daynightBg">#364f6b</color>
+    <!---Color violet-->
+    <color name="violet">#9065E5</color>
+    <color name="mid_violet">#A071FF</color>
+    <color name="light_violet">#B38DFF</color>
+    <color name="colorDN">#403f3f</color>
+</resources>

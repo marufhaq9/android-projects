@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="5dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:padding="4dp">
+
+        <!--<ToggleButton
+            android:id="@+id/button_favorite"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/button_favorite"
+            android:checked="false"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text=""
+            android:textOff=""
+            android:textOn=""/>-->
+
+        <!--<TextView
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:id="@+id/item_ayah"
+            android:textSize="30sp"
+            android:textStyle="italic"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center"
+            android:text="﴾﴿"
+            android:gravity="center"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_title"
+            android:layout_toEndOf="@+id/item_ayah"
+            android:paddingBottom="10dp"
+            android:paddingRight="5dp"
+            android:lineSpacingExtra="8dp"
+            android:layout_toRightOf="@+id/item_ayah"
+            android:layout_alignParentTop="true"
+            android:fontFamily="@font/fonts"
+            android:textSize="35sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_detail"
+            android:text="Bangla Ayah"
+            android:paddingTop="5dp"
+            android:textSize="15sp"
+            android:layout_toEndOf="@+id/item_ayah"
+            android:layout_toRightOf="@+id/item_ayah"
+            android:layout_below="@+id/item_title" />-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/item_ayah"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_title"
+            android:layout_below="@+id/item_ayah"
+            android:textColor="#000000"
+            android:paddingRight="10dp"
+            android:justificationMode="inter_word"
+            android:textSize="30sp"
+            android:fontFamily="@font/fonts" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_detail"
+            android:layout_below="@+id/item_title"
+            android:paddingRight="10dp"
+            android:justificationMode="inter_word"
+            android:textSize="18sp"/>
+
+
+
+    </RelativeLayout>
+</LinearLayout>
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:orientation="vertical"
+        android:id="@+id/relativ"
+        android:tag="cards main container">
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardBackgroundColor="@color/color_white"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="5dp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/ic_launcher"
+                    android:tag="image_tag"
+                    android:contentDescription="TODO" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:text="Surah Name"
+                        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+                    <view
+                        android:paddingTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/colorAccent"/>
+
+                    <LinearLayout
+                        android:paddingTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/textViewVersion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.1"
+                        android:text="Chapter: "
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+                    <TextView
+                        android:id="@+id/NumberOfVerse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.1"
+                        android:text="Verses: "
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                    </LinearLayout>
+                    </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>-->
+
