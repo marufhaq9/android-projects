@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="CGPA Calculator"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:id="@+id/credit"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="31dp"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="18dp"
+            android:inputType="numberDecimal"
+            android:hint="Credit" />
+
+        <EditText
+            android:id="@+id/gpa2"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/credit"
+            android:layout_marginEnd="31dp"
+            android:hint="Course GPA"
+            android:inputType="numberDecimal"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="31dp" />
+
+
+        <TextView
+            android:id="@+id/a1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/credit"
+            android:layout_marginTop="82dp"
+            android:text="CGPA: "
+            android:textSize="25sp"
+            android:layout_alignLeft="@+id/credit" />
+
+        <TextView
+            android:id="@+id/dispGpa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/a1"
+            android:layout_marginStart="129dp"
+            android:textSize="25sp"
+            android:layout_marginLeft="129dp"
+            android:layout_alignParentLeft="true" />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="85dp"
+            android:layout_height="45dp"
+            android:layout_alignEnd="@+id/gpa2"
+            android:layout_alignTop="@+id/a1"
+            android:text="ADD"
+            android:layout_alignRight="@+id/gpa2" />
+
+        <TextView
+            android:id="@+id/inputs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="156dp"
+            android:text="Your Entered Inputs: "
+            android:layout_marginLeft="16dp"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/courseID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/credit"
+            android:layout_marginTop="188dp"
+            android:text=""
+            android:inputType="textMultiLine"
+            android:layout_alignLeft="@+id/credit" />
+
+        <!--<TextView
+            android:id="@+id/coursegpa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/courseID"
+            android:layout_toStartOf="@+id/gpa2"
+            android:text=""
+            android:layout_toLeftOf="@+id/gpa2" />
+
+        <TextView
+            android:id="@+id/coursecrdt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/gpa2"
+            android:layout_alignTop="@+id/courseID"
+            android:text=""
+            android:layout_alignRight="@+id/gpa2" />-->
+
+        <!--<ScrollView
+            android:id="@+id/scrollLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="189dp"
+            android:layout_toEndOf="@+id/credit"
+            android:paddingBottom="20dp"
+            android:layout_toRightOf="@+id/credit">
+
+            <TextView
+                android:id="@+id/courseID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/courseCrdt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="adfad" />
+        </ScrollView>-->
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_screen2">
+
+    <!--<TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_toolbar"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="5dp"
+        android:text="Set Your info for better experience"
+        android:textAppearance="@style/ActionBar.TitleText"
+        android:textStyle="bold" />-->
+
+    <include layout="@layout/app_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="255dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="102dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="0dp">
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Name: "
+            android:textColor="#FFFF"
+            android:textSize="15sp" />
+
+        <!--<EditText
+            android:id="@+id/inputName"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:inputType="textPersonName" />-->
+
+        <TextView
+            android:id="@+id/instituteName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inputName"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="Institution Name: "
+            android:textColor="#FFFF"
+            android:textSize="15sp" />
+
+        <!--<EditText
+            android:id="@+id/inputInstitute"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:inputType="textPersonName" />-->
+
+        <TextView
+            android:id="@+id/semNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number of Courses:"
+            android:textColor="#FFFF"
+            android:textSize="15sp" />
+
+        <!--<EditText
+            android:id="@+id/courseNo"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />-->
+        <!--<Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Animation.AppCompat.DropDownUp"
+            android:entries="@array/semstr_arrays"
+            android:prompt="@string/semstr_prompt"/>
+
+        <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/gpaResult"
+            style="@style/AlertDialog.AppCompat.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GO" />-->
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/database"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="81dp"
+        android:layout_marginStart="51dp"
+        android:text="DataBase"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="51dp" />
+
+    <Button
+        android:id="@+id/btn22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/database"
+        android:layout_marginEnd="84dp"
+        android:text="Check"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="84dp" />
+</RelativeLayout>
